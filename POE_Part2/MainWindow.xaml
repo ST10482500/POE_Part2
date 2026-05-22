@@ -1,0 +1,73 @@
+﻿<Window x:Class="POE_Part2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Awareness Bot"
+        Height="650"
+        Width="950"
+        Background ="#101820">
+    
+    <Grid>
+
+     <!-- Title -->
+        <TextBlock Text="CYBERSCURITY AWARENESS BOT"
+       FontSize="28"
+       FontWeight="Bold"            
+       Foreground="Cyan"
+       HorizontalAlignment="Center"
+       Margin="0,20,0,0"
+       VerticalAlignment="Top"/>
+
+       <!-- SubTitle -->
+        <TextBlock Text="Protect - Detect - Respond"
+        FontSize="14"
+        Foreground="White"
+        HorizontalAlignment="Center"
+        Margin="0,60,0,0" 
+        VerticalAlignment="Top"/>
+        
+        <!-- ASCII -->
+        <TextBlock Name="txtAscii"  
+        FontFamily="Consolas"
+        FontSize="12"
+         Foreground="Lime" 
+       Margin="20,100,0,0"
+       VerticalAlignment="Top"
+        HorizontalAlignment="Left"/>
+        
+        <!-- Chat-->
+        <RichTextBox Name="rtbChat"
+         Margin= "250,100,20,120"
+          Background="Black"
+          Foreground="Lime"
+         FontSize="14"
+          IsReadOnly="True"/>
+        
+        <!-- Input-->
+        <TextBox Name="txtInput"
+         Margin="20,0,200,40"
+          VerticalAlignment="Bottom"
+          Height="35"
+         FontSize="14"/>
+        
+        <!-- Send-->
+        <Button Name="btnSend"
+           Content="SEND"
+         Width="80"
+          Height="35"
+          Margin="0,0,110,40"
+         VerticalAlignment="Bottom"
+          HorizontalAlignment="Right"
+            Click="btnSend_Click"/>
+        
+        <!-- Exit-->
+        <Button Name="btnExit"
+         Content="EXIT"
+         Width="80"
+         Height="35"
+         Margin="0,0,20,40"
+         HorizontalAlignment="Right"
+         VerticalAlignment="Bottom"
+           Click="btnExit_Click"/>
+        
+     </Grid>
+   </Window>
